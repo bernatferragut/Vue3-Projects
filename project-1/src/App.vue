@@ -1,5 +1,5 @@
 <template>
-  <h1>Bernat Vue3</h1>
+  <h1>Bernat loves Vue3</h1>
 </template>
 
 <script>
