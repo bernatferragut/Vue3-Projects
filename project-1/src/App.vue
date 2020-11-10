@@ -1,10 +1,37 @@
 <template>
-  <h1>Bernat loves Vue3</h1>
+  <h1>Counts: {{ state.count }}</h1>
+  <div>
+      <button @click="updateCount(true)">+</button>
+      <button @click="updateCount(false)">-</button>
+  </div>
 </template>
 
 <script>
+
+// import { ref } from 'vue';
+import { reactive } from 'vue';
+
 export default {
-  name: 'App',
+
+  setup() {
+    let state = reactive({
+      count : 0,
+    });
+
+    function updateCount(increase) {
+      if(increase){
+        state.count++;
+      } else {
+        state.count--;
+      }
+    }
+
+    return {
+      state,
+      updateCount,
+    }
+  }
+
 }
 </script>
 
