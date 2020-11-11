@@ -1,16 +1,17 @@
 <template>
   <div>
-    <h1>Consumption</h1>
+    <h1>AI Consumption</h1>
     <form @submit.prevent="addNewTodo">
-      <label>new todo</label>
+      <label> 👍 </label>
       <input v-model="state.newTodo" name="newTodo"/>
-      <button>Add Todo</button>
+      <button>advantage</button>
     </form>
     <!-- <pre>{{ state.newTodo }}</pre> -->
     <ul>
       <div v-for="(todo,index) in state.todos" v-bind:key="todo.id" class="todo">
         <h3 @click="toggleDone(todo)" v-bind:class="{ done:todo.done }">{{ todo.content }}</h3>
         <button @click="removeTodo(index)">-erase-</button>
+        <button @click="removeAll">-all-</button>
       </div>
     </ul>
   </div>
@@ -43,8 +44,16 @@ export default {
     }
 
     function removeTodo(index) {
-      console.log('erased todo at: , index')
+      console.log('erased todo at: ', index)
       state.todos.splice(index,1);
+    }
+
+    function removeAll() {
+      console.log('all have been removed');
+      state.todos.forEach( todo => todo.done = true);
+      setTimeout(() => {
+        state.todos=[];
+      },2000)
     }
 
     return {
@@ -52,6 +61,7 @@ export default {
       addNewTodo,
       toggleDone,
       removeTodo,
+      removeAll,
     }
   }
 }
