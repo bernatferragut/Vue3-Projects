@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ state.msg }}
+    {{ state.msg.toUpperCase() }}
   </div>
 </template>
 
@@ -9,7 +9,7 @@ import { reactive } from 'vue';
 export default {
     setup() {
     const state = reactive({
-      msg : 'Hello World',
+      msg : 'MENU',
     });
 
     return {

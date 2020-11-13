@@ -1,14 +1,14 @@
 <template>
-  <HelloWorld/>
+  <Menu/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Menu from './components/Menu.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Menu
   }
 }
 </script>
@@ -19,16 +19,9 @@ html {
   background: #08070f;
 }
 
-.done {
-  text-decoration: line-through;
-}
-
-.todo {
-  cursor : pointer;
-}
-
 #app {
   font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.4em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
