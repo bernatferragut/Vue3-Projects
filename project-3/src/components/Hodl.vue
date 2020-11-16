@@ -1,5 +1,7 @@
 <template>
-  
+    <div>
+        HODL
+    </div>
 </template>
 
 <script>

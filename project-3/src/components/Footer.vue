@@ -1,5 +1,7 @@
 <template>
-  
+    <div>
+        FOOTER
+    </div>
 </template>
 
 <script>
@@ -11,5 +13,3 @@ export default {
 <style>
 
 </style>
-
-vue

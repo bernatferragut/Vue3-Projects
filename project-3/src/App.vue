@@ -1,14 +1,33 @@
 <template>
-  <Menu/>
+<div>
+    <Top/>
+    <Search/>
+    <Hodl/>
+    <Greed/>
+    <Pie/>
+    <Footer/>
+</div>
+
+
 </template>
 
 <script>
-import Menu from './components/Menu.vue'
+import Top from './components/Top.vue'
+import Search from './components/Search.vue'
+import Hodl from './components/Hodl.vue'
+import Greed from './components/Greed.vue'
+import Pie from './components/Pie.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Menu
+    Top,
+    Search,
+    Hodl,
+    Greed,
+    Pie,
+    Footer
   }
 }
 </script>

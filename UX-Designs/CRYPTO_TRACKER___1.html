@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>crypto-tracker</title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: CRYPTO_TRACKER___1;
+	}
+	#CRYPTO_TRACKER___1 * {
+		margin: 0;
+		padding: 0;
+	}
+	#CRYPTO_TRACKER___1 {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		--web-view-name: CRYPTO-TRACKER – 1;
+		--web-view-id: CRYPTO_TRACKER___1;
+		--web-enable-deep-linking: true;
+	}
+	#footer {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.footer {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 110px;
+		left: 0px;
+		top: 970px;
+	}
+	#FOOTER {
+		opacity: 1;
+		position: absolute;
+		left: 922px;
+		top: 1014px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 80px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#pie_chart {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.pie_chart {
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		height: 402px;
+		left: 1527px;
+		top: 568px;
+	}
+	#PIE_CHART {
+		opacity: 1;
+		position: absolute;
+		left: 1671px;
+		top: 746px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 106px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#fg_index {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.fg_index {
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		height: 430px;
+		left: 1527px;
+		top: 138px;
+	}
+	#FG_INDEX {
+		opacity: 1;
+		position: absolute;
+		left: 1677px;
+		top: 330px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 94px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#holdings {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.holdings {
+		position: absolute;
+		overflow: visible;
+		width: 1134px;
+		height: 832px;
+		left: 393px;
+		top: 138px;
+	}
+	#HOLDINGS {
+		opacity: 1;
+		position: absolute;
+		left: 909px;
+		top: 517px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 104px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#search_box {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.search_box {
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		height: 832px;
+		left: 0px;
+		top: 138px;
+	}
+	#SEARCH_BOX {
+		opacity: 1;
+		position: absolute;
+		left: 137px;
+		top: 368px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 131px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#header {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.header {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 138px;
+		left: 0px;
+		top: 0px;
+	}
+	#CRYPTO_TRACKER {
+		opacity: 1;
+		position: absolute;
+		left: 870px;
+		top: 46px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 181px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#HODL_AMOUNT {
+		opacity: 1;
+		position: absolute;
+		left: 129px;
+		top: 540px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 147px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#ENTER {
+		opacity: 1;
+		position: absolute;
+		left: 170px;
+		top: 712px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 65px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Helvetica Neue;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+</style>
+</head>
+<body>
+<div id="CRYPTO_TRACKER___1">
+	<svg class="footer">
+		<rect id="footer" rx="0" ry="0" x="0" y="0" width="1920" height="110">
+		</rect>
+	</svg>
+	<div id="FOOTER">
+		<span>FOOTER</span>
+	</div>
+	<svg class="pie_chart">
+		<rect id="pie_chart" rx="0" ry="0" x="0" y="0" width="393" height="402">
+		</rect>
+	</svg>
+	<div id="PIE_CHART">
+		<span>PIE-CHART</span>
+	</div>
+	<svg class="fg_index">
+		<rect id="fg_index" rx="0" ry="0" x="0" y="0" width="393" height="430">
+		</rect>
+	</svg>
+	<div id="FG_INDEX">
+		<span>FG-INDEX</span>
+	</div>
+	<svg class="holdings">
+		<rect id="holdings" rx="0" ry="0" x="0" y="0" width="1134" height="832">
+		</rect>
+	</svg>
+	<div id="HOLDINGS">
+		<span>HOLDINGS</span>
+	</div>
+	<svg class="search_box">
+		<rect id="search_box" rx="0" ry="0" x="0" y="0" width="393" height="832">
+		</rect>
+	</svg>
+	<div id="SEARCH_BOX">
+		<span>SEARCH-BOX</span>
+	</div>
+	<svg class="header">
+		<rect id="header" rx="0" ry="0" x="0" y="0" width="1920" height="138">
+		</rect>
+	</svg>
+	<div id="CRYPTO_TRACKER">
+		<span>CRYPTO-TRACKER</span>
+	</div>
+	<div id="HODL_AMOUNT">
+		<span>HODL AMOUNT</span>
+	</div>
+	<div id="ENTER">
+		<span>ENTER</span>
+	</div>
+</div>
+</body>
+</html>
