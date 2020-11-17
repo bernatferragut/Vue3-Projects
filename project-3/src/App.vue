@@ -44,7 +44,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: greenyellow;
+  color: black ;
   margin: 0;
   padding: 0;
 }
@@ -52,6 +52,7 @@ html {
 :root {
   --main-radius: 5px;
   --main-padding: 5px;
+  --main-bgcolor: greenyellow;
 }
 
 .container {
@@ -68,42 +69,42 @@ html {
 }
 
 #navbar {
-  background-color: green;
+  background-color: var(--main-bgcolor);
   grid-area: navbar;
   border-radius: var(--main-radius);
   padding-top: var(--main-radius);
 }
 
 #sidebar {
-  background-color: green;
+  background-color: var(--main-bgcolor);
   grid-area: sidebar;
   border-radius: var(--main-radius);
   padding-top: var(--main-radius);
 }
 
 #main {
-  background-color: green;
+  background-color: var(--main-bgcolor);
   grid-area: main;
   border-radius: var(--main-radius);
   padding-top: var(--main-radius);
 }
 
 #content1 {
-  background-color: green;
+  background-color: var(--main-bgcolor);
   grid-area: content1;
   border-radius: var(--main-radius);
   padding-top: var(--main-radius);
 }
 
 #content2 {
-  background-color: green;
+  background-color: var(--main-bgcolor);
   grid-area: content2;
   border-radius: var(--main-radius);
   padding-top: var(--main-radius);
 }
 
 #footer {
-  background-color: green;
+  background-color: var(--main-bgcolor);
   grid-area: footer;
   border-radius: var(--main-radius);
   padding-top: var(--main-radius);
