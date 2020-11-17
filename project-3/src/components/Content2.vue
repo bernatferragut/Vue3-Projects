@@ -1,11 +1,13 @@
 <template>
     <div>
-        GREED
+        CONTENT2
     </div>
 </template>
 
-<script >
+<script>
+export default {
 
+}
 </script>
 
 <style>

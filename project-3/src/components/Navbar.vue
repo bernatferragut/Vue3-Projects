@@ -9,7 +9,7 @@ import { reactive } from 'vue';
 export default {
     setup() {
     const state = reactive({
-      msg : 'TOP',
+      msg : 'NAVBAR',
     });
 
     return {
@@ -20,6 +20,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 
 </style>

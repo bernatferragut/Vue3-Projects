@@ -1,6 +1,6 @@
 <template>
     <div>
-        SEARCH
+        MAIN
     </div>
 </template>
 

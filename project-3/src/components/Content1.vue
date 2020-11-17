@@ -1,13 +1,11 @@
 <template>
     <div>
-        HODL
+        CONTENT1
     </div>
 </template>
 
-<script>
-export default {
+<script >
 
-}
 </script>
 
 <style>

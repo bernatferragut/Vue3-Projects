@@ -1,6 +1,6 @@
 <template>
     <div>
-        PIE
+        SIDEBAR
     </div>
 </template>
 
