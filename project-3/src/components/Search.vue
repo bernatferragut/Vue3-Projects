@@ -9,7 +9,7 @@ import { reactive } from 'vue';
 export default {
     setup() {
     const state = reactive({
-      msg : 'NAVBAR',
+      msg : 'SEARCH',
     });
 
     return {

@@ -1,6 +1,6 @@
 <template>
     <div>
-        SIDEBAR
+        TITLE
     </div>
 </template>
 

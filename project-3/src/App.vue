@@ -1,29 +1,30 @@
 <template>
-<div class='container'>
-    <Navbar id="navbar"/>
-    <Sidebar id="sidebar"/>
-    <Main id="main"/>
+  <div class='container'>
+    <Title id="title"/>
+    <Search id="search"/>
+    <Total id="total"/>
     <Content1 id="content1"/>
+    <Main id="main"/>
     <Content2 id="content2"/>
     <Footer id="footer"/>
-</div>
-
-
+  </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue'
-import Sidebar from './components/Sidebar.vue'
-import Main from './components/Main.vue'
+import Title from './components/Title.vue'
+import Search from './components/Search.vue'
+import Total from './components/Total.vue'
 import Content1 from './components/Content1.vue'
+import Main from './components/Main.vue'
 import Content2 from './components/Content2.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Navbar,
-    Sidebar,
+    Title,
+    Search,
+    Total,
     Main,
     Content1,
     Content2,
@@ -61,23 +62,30 @@ html {
   grid-template-columns: .5fr 1fr .5fr;
   grid-template-rows: .5fr 1fr 1fr .5fr;
   grid-template-areas: 
-  "navbar navbar navbar"
-  "sidebar main content1"
-  "sidebar main content2"
+  "title search total"
+  "content1 main content2"
+  "content1 main content2"
   "footer footer footer";
   grid-gap: 0.2rem;
 }
 
-#navbar {
+#title {
   background-color: var(--main-bgcolor);
-  grid-area: navbar;
+  grid-area: title;
   border-radius: var(--main-radius);
   padding-top: var(--main-radius);
 }
 
-#sidebar {
+#search { 
   background-color: var(--main-bgcolor);
-  grid-area: sidebar;
+  grid-area: search;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-radius);
+}
+
+#total {
+  background-color: var(--main-bgcolor);
+  grid-area: total;
   border-radius: var(--main-radius);
   padding-top: var(--main-radius);
 }
@@ -115,9 +123,10 @@ html {
     grid-template-columns: 1fr;
     grid-template-rows: .25fr .25fr 1fr .5fr .5fr .5fr;
     grid-template-areas: 
-    "navbar"
-    "sidebar"
+    "title"
+    "search"
     "main"
+    "total"
     "content1"
     "content2"
     "footer";
