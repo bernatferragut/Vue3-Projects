@@ -1,15 +1,25 @@
 <template>
     <div>
         CONTENT2
-        <p>Fear and Gree Index</p>
+        <p>{{ test }}</p>
     </div>
 </template>
 
 <script>
+
+import {ref} from 'vue'
+
 export default {
+    setup(){
+
+        let test = ref('Fear&Greed');
+
+        return { test }
+    }
 
 }
 </script>
+
 
 <style>
 
