@@ -1,20 +1,24 @@
 <template>
     <div>
         CONTENT2
-        <p>{{ test }}</p>
+        <pre class="fng">{{ res2.data[0].value }}</pre>
     </div>
 </template>
 
 <script>
 
-import {ref} from 'vue'
+import {ref} from 'vue';
 
 export default {
-    setup(){
+    name:'Content2',
+    async setup(){
 
-        let test = ref('Fear&Greed');
+        let res2 = ref(null);
+        let res1 = await fetch('https://api.alternative.me/fng/?limit=1&format=json&date_format=world');
+        res2 = await res1.json();
+        console.log(res2);
 
-        return { test }
+        return { res2 }
     }
 
 }
@@ -22,5 +26,9 @@ export default {
 
 
 <style>
+
+.fng {
+    font-size: 4em;
+}
 
 </style>

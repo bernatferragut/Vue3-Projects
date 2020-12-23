@@ -5,7 +5,9 @@
     <Total id="total"/>
     <Content1 id="content1"/>
     <Main id="main"/>
-    <Content2 id="content2"/>
+    <suspense>
+        <Content2 id="content2"/>
+    </suspense>
     <Footer id="footer"/>
   </div>
 </template>
